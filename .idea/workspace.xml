@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a097b89f-3661-4eeb-a3fe-11915c4f40fc" name="Changes" comment="esqueleto homebanking">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scopes/noe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/8.2.1/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/8.2.1/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/8.2.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/8.2.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/8.2.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/8.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/8.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/8.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/8.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/8.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/8.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/8.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/file-system.probe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/src/main/java/com/mindhub/homebanking/HomebankingApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/src/main/java/com/mindhub/homebanking/controller/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/src/main/java/com/mindhub/homebanking/models/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/src/main/java/com/mindhub/homebanking/models/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/src/main/java/com/mindhub/homebanking/otros/AccountDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/src/main/java/com/mindhub/homebanking/otros/ClientDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/src/main/java/com/mindhub/homebanking/repositories/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/src/main/java/com/mindhub/homebanking/repositories/ClientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/src/main/resources/static/manager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homebanking/src/main/resources/static/manager.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/homebanking">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/homebanking">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="8ea56fe1-15de-4a35-83a9-19cacae19e8a" />
+        <option name="url" value="https://github.com/NoeJDiaz/NoeliaDiazAP9.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="NamedScopeManager">
+    <order>
+      <scope name="noe" />
+    </order>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2TUctspJk9JlXCT3ZGx8VDr3ZTu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Cherry-picking in main-false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Marcela/OneDrive/Documentos/NoeDiaz/mindhub/homebanking",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  }
+}]]></component>
+  <component name="RunManager" selected="Gradle.homebanking [bootRun]">
+    <configuration name="HomebankingApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mindhub.homebanking.HomebankingApplication" />
+      <module name="homebanking.homebanking.main~1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mindhub.homebanking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="homebanking [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/homebanking" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="homebanking [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/homebanking" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.homebanking [bootRun]" />
+        <item itemvalue="Application.HomebankingApplication" />
+        <item itemvalue="Gradle.homebanking [clean]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a097b89f-3661-4eeb-a3fe-11915c4f40fc" name="Changes" comment="" />
+      <created>1691101317445</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691101317445</updated>
+    </task>
+    <task id="LOCAL-00001" summary="mi primer commit">
+      <option name="closed" value="true" />
+      <created>1691104427838</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691104427838</updated>
+    </task>
+    <task id="LOCAL-00002" summary="esqueleto homebanking">
+      <option name="closed" value="true" />
+      <created>1691116769132</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691116769132</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mi primer commit" />
+    <MESSAGE value="esqueleto homebanking" />
+    <option name="LAST_COMMIT_MESSAGE" value="esqueleto homebanking" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="noe" pattern="src:*..*" />
+</component>
