@@ -1,17 +1,15 @@
 package com.mindhub.homebanking;
 
 import com.mindhub.homebanking.models.*;
-import com.mindhub.homebanking.repositories.AccountRepository;
-import com.mindhub.homebanking.repositories.ClientRepository;
-import com.mindhub.homebanking.repositories.LoanRepository;
-import com.mindhub.homebanking.repositories.ClientLoanRepository;
-import com.mindhub.homebanking.repositories.TransactionRepository;
+import com.mindhub.homebanking.repositories.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import java.time.LocalDate;
 import java.util.List;
+
+import static java.time.LocalTime.now;
 
 @SpringBootApplication
 public class HomebankingApplication {
@@ -23,7 +21,7 @@ public class HomebankingApplication {
 
 
 	@Bean
-	public CommandLineRunner initData(ClientRepository clientRepository, AccountRepository accountRepository, TransactionRepository transactionRepository, LoanRepository loanRepository, ClientLoanRepository clientLoanRepository) {
+	public CommandLineRunner initData(ClientRepository clientRepository, AccountRepository accountRepository, TransactionRepository transactionRepository, LoanRepository loanRepository, ClientLoanRepository clientLoanRepository,  CardsRepository cardsRepository) {
 		return (args)-> {
 			Client client1 = new Client("Melva", "Morel", "melba@mindhub.com");
 			Client client2 = new Client("Luna", "Da Silva", "Lulu@mindhub.com");
@@ -102,6 +100,18 @@ public class HomebankingApplication {
 			clientLoanRepository.save(clientLoan3);
 			ClientLoan clientLoan4 = new ClientLoan(36, 200000.00, client2, loan3);
 			clientLoanRepository.save(clientLoan4);
+
+			Card card1 = new Card("Melva Morel", CardType.DEBIT,CardColor.GOLD,1231546464616587.00,455.00,LocalDate.now().plusYears(5),LocalDate.now());
+			client1.addCard(card1);
+			cardsRepository.save(card1);
+			Card card2 = new Card("Melva Morel", CardType.CREDIT,CardColor.TITANIUM,1231546555501578.00,321.00,LocalDate.now().plusYears(5),LocalDate.now());
+			client1.addCard(card2);
+			cardsRepository.save(card2);
+
+			Card card3 = new Card("Luna Da Silva", CardType.CREDIT,CardColor.SILVER,1231546556054867.00,322.00,LocalDate.now().plusYears(5),LocalDate.now());
+			client2.addCard(card3);
+			cardsRepository.save(card3);
+
 		};
 	}
 }

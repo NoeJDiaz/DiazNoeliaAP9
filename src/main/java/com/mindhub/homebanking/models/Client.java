@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Set;
 
 import static java.util.stream.Collectors.toList;
-import static javax.persistence.FetchType.*;
 
 @Entity
 
@@ -26,6 +25,8 @@ public class Client {
     Set<Account> accounts = new HashSet<>();
     @OneToMany(mappedBy = "client", fetch = FetchType.EAGER)
     Set<ClientLoan> clientLoans;
+    @OneToMany(mappedBy = "holder", fetch = FetchType.EAGER)
+    Set<Card> cards = new HashSet<>();
 
     public Client() {
 
@@ -74,6 +75,16 @@ public class Client {
         account.setOwner(this);
         accounts.add(account);
     }
+
+    public Set<Card> getCards() {
+        return cards;
+    }
+
+    public void addCard(Card card) {
+        card.setHolder(this);
+        cards.add(card);
+    }
+
 
     public void addClientLoan(ClientLoan clientLoan) {
         clientLoan.setClient(this);

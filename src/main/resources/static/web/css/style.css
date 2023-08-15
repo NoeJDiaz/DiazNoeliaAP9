@@ -72,3 +72,7 @@
 .index-container {
     margin-top: 10%;
 }
+#list{
+    margin-top: 124px
+    row-gap: 28px
+}
