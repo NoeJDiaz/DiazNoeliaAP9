@@ -2,10 +2,13 @@ package com.mindhub.homebanking;
 
 import com.mindhub.homebanking.models.*;
 import com.mindhub.homebanking.repositories.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
 import java.time.LocalDate;
 import java.util.List;
 
@@ -19,12 +22,13 @@ public class HomebankingApplication {
 		SpringApplication.run(HomebankingApplication.class, args);
 	}
 
-
+	@Autowired
+	PasswordEncoder passwordEncoder;
 	@Bean
 	public CommandLineRunner initData(ClientRepository clientRepository, AccountRepository accountRepository, TransactionRepository transactionRepository, LoanRepository loanRepository, ClientLoanRepository clientLoanRepository,  CardsRepository cardsRepository) {
 		return (args)-> {
-			Client client1 = new Client("Melva", "Morel", "melba@mindhub.com");
-			Client client2 = new Client("Luna", "Da Silva", "Lulu@mindhub.com");
+			Client client1 = new Client("Melva", "Morel", "melba@mindhub.com", passwordEncoder.encode("123321"));
+			Client client2 = new Client("Luna", "Da Silva", "Lulu@mindhub.com",passwordEncoder.encode("124421"));
 
 			clientRepository.save(client1);
 			clientRepository.save(client2);
@@ -94,8 +98,10 @@ public class HomebankingApplication {
 			ClientLoan clientLoan1 = new ClientLoan(60, 400000.00, client1, loan1);
 			clientLoanRepository.save(clientLoan1);
 
-			ClientLoan clientLoan2 = new ClientLoan(12, 50000.00, client1, loan2);
+			ClientLoan clientLoan2 = new ClientLoan(12, 50000.00, client1, loan1);
+
 			clientLoanRepository.save(clientLoan2);
+
 			ClientLoan clientLoan3 = new ClientLoan(24, 100000.00, client2, loan2);
 			clientLoanRepository.save(clientLoan3);
 			ClientLoan clientLoan4 = new ClientLoan(36, 200000.00, client2, loan3);
@@ -114,4 +120,5 @@ public class HomebankingApplication {
 
 		};
 	}
+
 }
